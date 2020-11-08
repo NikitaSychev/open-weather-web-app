@@ -20,26 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f7b214-432a-4691-baf3-e022a2948117" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/simple_api/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_api/api/mock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_api/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_api/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/cities.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/middlewares/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/middlewares/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/cities.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cities-list/cities-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cities-list/cities-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-field/search-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-field/search-field.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/search-field/search-string.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/search-field/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +70,7 @@
       <updated>1604778976903</updated>
       <workItem from="1604778978211" duration="711000" />
       <workItem from="1604837173884" duration="6836000" />
-      <workItem from="1604845486655" duration="23978000" />
+      <workItem from="1604845486655" duration="24695000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1604779078054</created>
@@ -104,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604843434983</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added api, mockApi for cities">
+      <created>1604872799994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604872799994</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +114,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
     <MESSAGE value="separated the components" />
-    <option name="LAST_COMMIT_MESSAGE" value="separated the components" />
+    <MESSAGE value="added api, mockApi for cities" />
+    <option name="LAST_COMMIT_MESSAGE" value="added api, mockApi for cities" />
   </component>
   <component name="WindowStateProjectService">
     <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1604845501422">
@@ -148,10 +138,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1659" height="186" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
-    <state x="432" y="219" key="Vcs.Push.Dialog.v2" timestamp="1604843436795">
+    <state x="432" y="219" key="Vcs.Push.Dialog.v2" timestamp="1604872803630">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="219" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1604843436795" />
+    <state x="432" y="219" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1604872803630" />
     <state x="548" y="222" width="583" height="566" key="find.popup" timestamp="1604858021036">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
