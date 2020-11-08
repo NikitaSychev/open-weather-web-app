@@ -19,132 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8f7b214-432a-4691-baf3-e022a2948117" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="389b5eb8-1a45-460b-bd49-a763e6e2d91f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/open-weather-web-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-        <option value="package.json" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1jyaqat3ROy6D4DnZxbTzqW1rg3" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-redux-typescript-realworld-app-master" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\Demnik\WebstormProjects\open-weather-web-app\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Demnik\WebstormProjects\open-weather-web-app\src\store\reducers" />
-      <recent name="C:\Users\Demnik\WebstormProjects\open-weather-web-app\src\store\middlewares" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="b8f7b214-432a-4691-baf3-e022a2948117" name="Default Changelist" comment="" />
-      <created>1604778976903</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1604778976903</updated>
-      <workItem from="1604778978211" duration="711000" />
-      <workItem from="1604837173884" duration="6836000" />
-      <workItem from="1604845486655" duration="24695000" />
-    </task>
-    <task id="LOCAL-00001" summary="create project">
-      <created>1604779078054</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1604779078054</updated>
-    </task>
-    <task id="LOCAL-00002" summary="separated the components">
-      <created>1604843434983</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604843434983</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added api, mockApi for cities">
-      <created>1604872799994</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1604872799994</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="create project" />
-    <MESSAGE value="separated the components" />
-    <MESSAGE value="added api, mockApi for cities" />
-    <option name="LAST_COMMIT_MESSAGE" value="added api, mockApi for cities" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1604845501422">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1604845501422" />
-    <state width="1659" height="186" key="GridCell.Tab.0.bottom" timestamp="1604858386109">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="186" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386109" />
-    <state width="1659" height="186" key="GridCell.Tab.0.center" timestamp="1604858386108">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="186" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
-    <state width="1659" height="186" key="GridCell.Tab.0.left" timestamp="1604858386108">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="186" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
-    <state width="1659" height="186" key="GridCell.Tab.0.right" timestamp="1604858386108">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state width="1659" height="186" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
-    <state x="432" y="219" key="Vcs.Push.Dialog.v2" timestamp="1604872803630">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="432" y="219" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1604872803630" />
-    <state x="548" y="222" width="583" height="566" key="find.popup" timestamp="1604858021036">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="548" y="222" width="583" height="566" key="find.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1604858021036" />
   </component>
 </project>
