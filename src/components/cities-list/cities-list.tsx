@@ -3,6 +3,8 @@ import {Button, List, Tooltip} from "antd";
 import {CloseOutlined} from "@ant-design/icons";
 
 const CitiesList: React.FunctionComponent = (): React.ReactElement => {
+    
+
     return (
         <List
             header={'Выбранные города'}

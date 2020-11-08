@@ -20,18 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f7b214-432a-4691-baf3-e022a2948117" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/cities-list/cities-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search-field/search-field.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/weather-list/weather-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/cities-list-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/search-field-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/weather-list-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/search-field/search-string.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/search-field/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple_api/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple_api/api/mock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple_api/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple_api/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/cities.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/middlewares/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/middlewares/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/cities.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cities-list/cities-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cities-list/cities-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-field/search-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-field/search-field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/search-field/search-string.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/search-field/types.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="package.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -59,10 +67,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../license-manager-react" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-redux-typescript-realworld-app-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\Demnik\WebstormProjects\open-weather-web-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Demnik\WebstormProjects\open-weather-web-app\src\store\reducers" />
+      <recent name="C:\Users\Demnik\WebstormProjects\open-weather-web-app\src\store\middlewares" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604778976903</updated>
       <workItem from="1604778978211" duration="711000" />
-      <workItem from="1604837173884" duration="5198000" />
+      <workItem from="1604837173884" duration="6836000" />
+      <workItem from="1604845486655" duration="23978000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1604779078054</created>
@@ -82,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604779078054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="separated the components">
+      <created>1604843434983</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604843434983</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,32 +124,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="separated the components" />
+    <option name="LAST_COMMIT_MESSAGE" value="separated the components" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1604837912633">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1604845501422">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1604837912633" />
-    <state width="1659" height="256" key="GridCell.Tab.0.bottom" timestamp="1604837973256">
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1604845501422" />
+    <state width="1659" height="186" key="GridCell.Tab.0.bottom" timestamp="1604858386109">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1659" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1604837973256" />
-    <state width="1659" height="256" key="GridCell.Tab.0.center" timestamp="1604837973256">
+    <state width="1659" height="186" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386109" />
+    <state width="1659" height="186" key="GridCell.Tab.0.center" timestamp="1604858386108">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1659" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1604837973256" />
-    <state width="1659" height="256" key="GridCell.Tab.0.left" timestamp="1604837973256">
+    <state width="1659" height="186" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
+    <state width="1659" height="186" key="GridCell.Tab.0.left" timestamp="1604858386108">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1659" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1604837973256" />
-    <state width="1659" height="256" key="GridCell.Tab.0.right" timestamp="1604837973256">
+    <state width="1659" height="186" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
+    <state width="1659" height="186" key="GridCell.Tab.0.right" timestamp="1604858386108">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1659" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1604837973256" />
-    <state x="432" y="219" key="Vcs.Push.Dialog.v2" timestamp="1604779081345">
+    <state width="1659" height="186" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1604858386108" />
+    <state x="432" y="219" key="Vcs.Push.Dialog.v2" timestamp="1604843436795">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="219" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1604779081345" />
+    <state x="432" y="219" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1604843436795" />
+    <state x="548" y="222" width="583" height="566" key="find.popup" timestamp="1604858021036">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="548" y="222" width="583" height="566" key="find.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1604858021036" />
   </component>
 </project>
