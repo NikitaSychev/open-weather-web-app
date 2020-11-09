@@ -1,11 +1,14 @@
 const router = require('express').Router()
 const mocks = require('./mock')
 
+// Задаём время ответа на запрос (эмуляция)
+// готовим результат
 const reply = (res, body, timeout = 1000, status = 200) =>
     setTimeout(() => {
         res.status(status).json(body)
     }, timeout);
 
+// Запрос данных из Mock
 router.get('/city', function (req, res, next) {
 
     if (!req || !req.query || !req.query.name) {

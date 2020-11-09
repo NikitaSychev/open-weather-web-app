@@ -1,43 +1,38 @@
-import './App.css'
+import './App.scss'
 import 'antd/dist/antd.css';
 import React from 'react';
-import {Input, Layout} from 'antd';
+import {Layout} from "antd";
 import WeatherListContainer from "./containers/weather-list-container";
 import SearchFieldContainer from "./containers/search-field-container";
 import CitiesListContainer from "./containers/cities-list-container";
 import { Provider } from "react-redux"
 import store from "./store/store";
 
-const {Search} = Input;
 const {Header, Content, Sider} = Layout;
-
 
 const App: React.FunctionComponent = (): React.ReactElement => {
     return (
         <Provider store={store}>
-            <div style={{height: '100%'}}>
+            <Layout className="main-container">
                 <Header>
-                    <p style={{color: "white"}}>
+                    <h1 className="header-title">
                         {'Погодное одностраничное веб-приложение'}
-                    </p>
+                    </h1>
                 </Header>
-                <Layout style={{height: '100%'}}>
-                    <Sider width={400} style={{backgroundColor: 'white'}}>
-                        <SearchFieldContainer/>
-                        <CitiesListContainer/>
+                <Layout className="main-container">
+                    <Sider width={400} className="left-panel">
+                        <Layout className="left-panel-container" style={{backgroundColor: 'white'}}>
+                            <SearchFieldContainer/>
+                            <CitiesListContainer/>
+                        </Layout>
                     </Sider>
-                    <Layout style={{padding: '24px', height: '100%'}}>
-                        <Content style={{
-                            padding: 24,
-                            margin: 0,
-                            minHeight: 280,
-                            height: '100%'
-                        }} className="site-layout-background">
+                    <Layout className="content-container">
+                        <Content className="content-container__content">
                             <WeatherListContainer/>
                         </Content>
                     </Layout>
                 </Layout>
-            </div>
+            </Layout>
         </Provider>
     );
 };

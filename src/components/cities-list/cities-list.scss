@@ -1,0 +1,15 @@
+.cities-list {
+  overflow-y: auto;
+  height: 100%;
+
+  &__header {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

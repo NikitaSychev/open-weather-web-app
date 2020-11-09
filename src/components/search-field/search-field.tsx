@@ -1,88 +1,84 @@
-import React, {useEffect, useState} from "react";
+import './search-field.scss';
+import React from "react";
 import {AutoComplete, Input} from "antd";
 import {useDispatch, useSelector} from "react-redux";
-import {addCityInList, getCity} from "../../store/actions/cities";
 import {AppState} from "../../store/store";
 import {IMockCities} from "../../store/middlewares/types";
+import {addCityInList, clearSearchList, getCity} from "../../store/actions";
 
-const prepareOptions = (data: IMockCities[]) => {
+interface ISearchFieldOption {
+    key: number
+    value: string
+    label: React.ReactElement
+}
+
+/**
+ * Подготовить элемент списка
+ * @param data
+ */
+const prepareOptions = (data: IMockCities[]): ISearchFieldOption[] => {
     return data.map((item: IMockCities) => {
-        const coordinates = `${item.coordinates.lat} ${item.coordinates.lon}`;
+        const coordinates = `${item.coordinates.lat}, ${item.coordinates.lon}`;
         return {
+            key: item.id,
             value: `${item.name}   (${coordinates})`,
             label: (
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                    }}
-                >
+                <div className="label">
                     <span>
                       {item.name}
                     </span>
                     <span>
-                        <div style={{width: 200, display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>
+                        <div className="item-value">
                             <span style={{marginRight: 10}}>{item.country}</span>
                             <span>{coordinates}</span>
                         </div>
                     </span>
                 </div>
             ),
-        };
+        } as ISearchFieldOption;
     })
-}
-
-const getSelectedCity = (value: string, cities: IMockCities[]): IMockCities => {
-    const parts = value.split('   ');
-    if (parts && parts.length === 2) {
-        const name = parts[0];
-        const [lat, lon] = parts[1]
-            .replace('(', '')
-            .replace(')', '')
-            .split(' ')
-            .map(res => parseFloat(res));
-        if (lon && lat) {
-            const selectedCity = cities.find(item =>
-                item.name === name
-                && item.coordinates.lon === lon
-                && item.coordinates.lat === lat);
-            if (selectedCity) {
-                return selectedCity;
-            }
-        }
-    }
-
-    return {} as IMockCities;
 }
 
 const SearchField: React.FunctionComponent = (): React.ReactElement => {
 
-    const [options, setOptions] = useState<any[]>([]);
-    const {cities} = useSelector((state: AppState) => state.SearchStringReducer);
+    const cities = useSelector((state: AppState) => state.SearchReducer.list);
     const dispatch = useDispatch();
 
-    useEffect(() => {
-        setOptions(prepareOptions(cities));
-    }, [cities]);
-
-    console.log('cities', cities);
-
+    /**
+     * Обработка события изменения значения в поле поиска
+     * @param value
+     */
     const handleSearch = (value: string): void => {
+        if (!value || value.length === 0) {
+            dispatch(clearSearchList());
+            return;
+        }
+        if (value && value.length < 3) {
+            return;
+        }
         dispatch(getCity(value));
     };
 
-    const handleSelect = (value: string): void => {
-        const city = getSelectedCity(value, cities);
-        dispatch(addCityInList(city));
-        setOptions([]);
+    /**
+     * Обработка события выбора города из выпадающего списка
+     * @param value
+     * @param option
+     */
+    const handleSelect = (value: string, option: any): void => {
+        const inputData = Object.assign({} as ISearchFieldOption, option);
+        if (!inputData) {
+            return
+        }
+        const selectedCity = cities.find(item => item.id === inputData.key);
+        if (selectedCity) {
+            dispatch(addCityInList(selectedCity));
+        }
     };
 
     return (
         <AutoComplete
-            style={{
-                width: '100%',
-            }}
-            options={options}
+            style={{width: '100%'}}
+            options={prepareOptions(cities)}
             onSelect={handleSelect}
             onSearch={handleSearch}
         >

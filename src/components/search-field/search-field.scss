@@ -1,0 +1,11 @@
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-value {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

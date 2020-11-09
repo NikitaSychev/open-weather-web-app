@@ -1,7 +1,7 @@
 import {FAIL, START, SUCCESS} from "../../constants";
 
-export default (store: any) => (next: any) => async (action: any) => {
-    const {currentAPI, callAPI, type, ...rest} = action;
+const serviceApi = (store: any) => (next: any) => async (action: any) => {
+    const {currentAPI, callAPI, type, payload, ...rest} = action;
     if (!currentAPI || !callAPI) return next(action);
 
     next({
@@ -16,6 +16,7 @@ export default (store: any) => (next: any) => async (action: any) => {
             return next({
                 type: type + FAIL,
                 error: jsonRes.message,
+                payload,
                 ...rest
             });
         }
@@ -24,13 +25,17 @@ export default (store: any) => (next: any) => async (action: any) => {
         next({
             type: type + SUCCESS,
             jsonRes,
+            payload,
             ...rest
         });
     } catch (error) {
         next({
             type: type + FAIL,
             error,
+            payload,
             ...rest
         });
     }
 }
+
+export default serviceApi;

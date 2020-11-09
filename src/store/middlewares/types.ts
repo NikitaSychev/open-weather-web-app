@@ -66,5 +66,7 @@ export interface IOpenWeatherDaily {
     lon: number
     timezone: string
     timezone_offset: number
+    cityName?: string
+    cityId?: number
 }
 
