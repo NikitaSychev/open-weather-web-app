@@ -1,7 +1,7 @@
-import { createStore, combineReducers, compose, applyMiddleware } from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
 import {SearchStringReducer} from "./reducers/cities";
-import thunk from "redux-thunk";
 import api from "./middlewares/api";
+import thunk from "redux-thunk";
 
 const rootReducer = combineReducers({SearchStringReducer});
 

@@ -1,0 +1,15 @@
+.cell-weather {
+  min-width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__top-line{
+    color: cadetblue;
+    font-weight: bold;
+  }
+
+  &__bottom-line{
+    font-size: 12px;
+  }
+}

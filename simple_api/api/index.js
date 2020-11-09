@@ -7,13 +7,14 @@ const reply = (res, body, timeout = 1000, status = 200) =>
     }, timeout);
 
 router.get('/city', function (req, res, next) {
-    // res.send(req.query.name);
 
-    if (!req || !req.query) {
+    if (!req || !req.query || !req.query.name) {
         return reply(res, {error: 'unexpected query'}, 100, 404);
     }
-    const city = mocks.cities.filter(item => item.name.toLowerCase().includes(req.query.name.toLowerCase()));
-    if (city) return reply(res, city, 150);
+    const city = mocks.cities.filter(item => item.name.toLowerCase().includes(req.query.name.toLowerCase()))
+    // берём только первые 5 элементов
+    const result = city.slice(Math.max(city.length - 5, 0));
+    if (result) return reply(res, result, 150);
     reply(res, {error: 'not found'}, 100, 404);
 });
 

@@ -1,6 +1,10 @@
-import {IMockCities} from "../middlewares/types";
+import {IMockCities, IOpenWeatherDaily} from "../middlewares/types";
+
+// export interface
 
 export interface ICityState {
-    cityName: string,
+    cityName: string
     cities: IMockCities[]
+    citiesInList: IMockCities[]
+    weather: IOpenWeatherDaily[]
 }
